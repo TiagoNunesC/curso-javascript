@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Verificação de inputs</title>
+</head>
+<body>
+    <form id="cadastro-form">
+        <label for="email-input">E-mail:</label>
+        <input type="email" id="email-input" placeholder="Digite se e-mail">
+        <div id="email-feedback"></div>
+        <label for="username-input">Nome de Usuário:</label>
+        <input type="text" id="username-input" placeholder="Digite seu nome de usuário">
+        <div id="username-feedback"></div>
+    </form>
+
+    <form id="projeto-form">
+        <label for="nome-projeto">Nome do Projeto:</label>
+        <input type="text" id="nome-projeto" placeholder="Digite o nome do projeto"><br>
+
+        <label for="descricao-projeto">Descrição:</label>
+        <textarea id="descricao-projeto" placeholder="Digite a descrição"></textarea><br>
+
+        <label for="tag-input">Tags:</label>
+        <input type="text" id="tag-input" placeholder="Digite uma tag e pressione Enter">
+        <ul id="lista-tags"></ul><br>
+
+        <button type="button" id="publicar-btn">Publicar</button>
+        <div id="feedback" class="feedback"></div>
+
+    </form>
+
+    <form id="feedback-form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome:"><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="Digite seu e-mail:"><br>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea><br>
+
+        <button type="button" id="enviar-btn">Enviar</button>
+        <div id="new-feedback" class="new-feedback"></div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
